@@ -102,6 +102,7 @@ def getURLs(url):
 rule = get_rule(rules_url='https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt', ruleType='base64')
 # 从 https://github.com/Johnshall/cn-blocked-domain 中获取GFWList的补充
 rule += get_rule('https://raw.githubusercontent.com/Johnshall/cn-blocked-domain/release/domains.txt')
+rule += get_rule('http://rss.xqgdsb.fun:8889/gfw.txt')
 
 rules = clear_format(rule)
 
